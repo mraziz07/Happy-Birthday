@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="video-card">
+        <div class="video-wrapper">
+            <video id="messagesVideo" autoplay loop muted playsinline disablepictureinpicture disableremoteplayback>
+                <source src="messages.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Placed INSIDE .video-wrapper so they sit ON the video -->
+            <button type="button" id="msg1Btn" class="msg-overlay-btn btn-msg1">message1</button>
+            <button type="button" id="msg2Btn" class="msg-overlay-btn btn-msg2">message2</button>
+            <button type="button" id="giftBtn" class="msg-overlay-btn btn-gift">gift</button>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
