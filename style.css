@@ -234,7 +234,7 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
     transition: transform 0.15s ease, background-color 0.2s ease;
-    opacity: 50;
+    opacity: 0;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -274,7 +274,7 @@ body {
 
 /* Floating button base style placed directly over the photo */
 .action-btn {
-    opacity: 50;
+    opacity: 0;
     position: absolute;
     bottom: 30px;
     z-index: 10;
@@ -476,7 +476,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
     transition: transform 0.15s ease, background-color 0.2s ease;
     white-space: nowrap;
-    opacity: 20;
+    opacity: 0;
 }
 
 .msg-overlay-btn:hover {
