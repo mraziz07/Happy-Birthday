@@ -691,3 +691,103 @@ body {
     }
 }
     
+
+/* Heading inside the scrollable gift overlay box */
+.gift-scroll-heading {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: #1e88e5;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .gift-scroll-heading {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+}
+
+
+
+.gift-scroll-heading {
+    margin: 12px 0 0 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #1e88e5;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.scroll-spacer {
+    display: block;
+    width: 100%;
+    height: 220px;
+    min-height: 220px;
+    flex-shrink: 0;
+}
+
+.message-text-box .scroll-spacer + p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .gift-scroll-heading {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .scroll-spacer {
+        height: 160px;
+        min-height: 160px;
+    }
+}
+
+
+/* Stationary image sitting inside the scroll area underneath the heading */
+.fixed-scroll-bg {
+    position: absolute;
+    top: 22%;               /* Sits right underneath "SCROLL DOWN FOR YOUR GIFT" */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;           /* Adjust size as needed */
+    max-width: 55%;
+    height: auto;
+    border-radius: 10px;
+    z-index: 3;             /* Above gift.jpg (default), below scrolling text (z-index: 5) */
+    pointer-events: none;   /* Ensures touch scrolling works smoothly right on top of the photo */
+    opacity: 0.9;
+}
+
+/* Mobile size and vertical placement */
+@media (max-width: 768px) {
+    .fixed-scroll-bg {
+        top: 20%;
+        width: 115px;
+        max-width: 50%;
+    }
+}
+
+
+/* Photo inside the scrollable box that moves naturally with the text */
+.inline-scroll-photo {
+    display: block;
+    width: 160px;
+    max-width: 65%;
+    height: auto;
+    margin: 10px auto 0 auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .inline-scroll-photo {
+        width: 120px;
+        max-width: 60%;
+    }
+}
